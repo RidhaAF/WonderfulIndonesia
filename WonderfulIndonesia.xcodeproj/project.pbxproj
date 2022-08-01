@@ -11,6 +11,10 @@
 		DEB1564A2896CA4B00269990 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB156492896CA4B00269990 /* ContentView.swift */; };
 		DEB1564C2896CA4F00269990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB1564B2896CA4F00269990 /* Assets.xcassets */; };
 		DEB1564F2896CA4F00269990 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB1564E2896CA4F00269990 /* Preview Assets.xcassets */; };
+		DEB156582896CABD00269990 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB156572896CABD00269990 /* PlaceModel.swift */; };
+		DEB1565A2896CBEA00269990 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB156592896CBEA00269990 /* PlaceController.swift */; };
+		DEDEB1D62897D8DF0042E663 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEB1D52897D8DE0042E663 /* PlaceDetailView.swift */; };
+		DEDEB1D82897E69E0042E663 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEB1D72897E69E0042E663 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		DEB156492896CA4B00269990 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEB1564B2896CA4F00269990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEB1564E2896CA4F00269990 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEB156572896CABD00269990 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		DEB156592896CBEA00269990 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
+		DEDEB1D52897D8DE0042E663 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
+		DEDEB1D72897E69E0042E663 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 		DEB156462896CA4B00269990 /* WonderfulIndonesia */ = {
 			isa = PBXGroup;
 			children = (
+				DEB156562896CA9500269990 /* Controller */,
+				DEB156552896CA8F00269990 /* Model */,
+				DEDEB1D42897D8C00042E663 /* View */,
 				DEB156472896CA4B00269990 /* WonderfulIndonesiaApp.swift */,
 				DEB156492896CA4B00269990 /* ContentView.swift */,
 				DEB1564B2896CA4F00269990 /* Assets.xcassets */,
@@ -65,6 +76,31 @@
 				DEB1564E2896CA4F00269990 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEB156552896CA8F00269990 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEB156572896CABD00269990 /* PlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEB156562896CA9500269990 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEB156592896CBEA00269990 /* PlaceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DEDEB1D42897D8C00042E663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEDEB1D52897D8DE0042E663 /* PlaceDetailView.swift */,
+				DEDEB1D72897E69E0042E663 /* ProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB156582896CABD00269990 /* PlaceModel.swift in Sources */,
+				DEB1565A2896CBEA00269990 /* PlaceController.swift in Sources */,
 				DEB1564A2896CA4B00269990 /* ContentView.swift in Sources */,
 				DEB156482896CA4B00269990 /* WonderfulIndonesiaApp.swift in Sources */,
+				DEDEB1D82897E69E0042E663 /* ProfileView.swift in Sources */,
+				DEDEB1D62897D8DF0042E663 /* PlaceDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +321,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ridhaaf.com.WonderfulIndonesia;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WonderfulIndonesia;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +350,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ridhaaf.com.WonderfulIndonesia;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WonderfulIndonesia;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
